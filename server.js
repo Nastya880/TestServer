@@ -6,10 +6,21 @@ export default {
 	// 	return 'hello world';
 	// }
 
-  '/test/': function() {
-		let num1 = 1;
-		let num2 = 2;
+  // '/test/': function() {
+	// 	let num1 = 1;
+	// 	let num2 = 2;
 		
-		return num1 + num2;
-	}
+	// 	return num1 + num2;
+	// }
+
+  // отправка HTML кода
+    // '/test/': function() {
+    //   return '<b>text</b>';
+    // }
+
+// обработчик адреса отправки формы
+  '/handler/': function(data) {
+      console.log(data); // выведется в консоль сервера
+      return 'form data received';
+    }
 }
